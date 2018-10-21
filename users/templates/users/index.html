@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">{% load staticfiles %}
+	<title>DILUTE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="{% static 'users/css/bootstrap-responsive.css' %}" rel="stylesheet">
+	<link href="{% static 'users/css/style.css' %}" rel="stylesheet">
+	<link href="{% static 'users/color/default.css' %}" rel="stylesheet">
+
+	<link rel="shortcut icon" href="{% static 'users/img/logo-image.jpg' %}">
+	<link rel="stylesheet" href="{% static 'users/css/theme.css' %}" type="text/css">
+	
+</head>
+
+<body>
+	<!-- navbar -->
+	<div class="navbar-wrapper">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<!-- Responsive navbar -->
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</a>
+					<h1 class="brand"><a title="Plant-o-meter" href="{% url 'users:homepage' %}">DILUTE</a></h1>
+					<!-- navigation -->
+					<nav class="pull-right nav-collapse collapse">
+						<ul id="menu-main" class="nav">
+							<li><a href="{% url 'users:login' %}">Login</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="header-wrapper" class="header-slider" style="background-image: url({% static 'users/img/bg/main.jpg' %})">
+		<header class="clearfix">
+			<div class="logo">
+				<img src="{% static 'users/img/logo-image.jpg' %}" alt="" height="300" width="300" />
+			</div>
+			<div class="container x">
+				<div class="row">
+					<div class="span12">
+							<ul class="slides">
+								<li>
+									<p class="home-slide-content" style="color:black;font-size: 35px;">
+										<strong>ONE STEP</strong> SOLUTION
+									</p>
+								</li>
+								<li>
+									<p class="home-slide-content" style="color:black;font-size: 35px;">
+										WATER RESOURCE MANAGEMENT<strong> A CLICK AWAY</strong>
+									</p>
+								</li>
+								<li>
+									<p class="home-slide-content" style="color:black;font-size: 35px;">
+										SAVE TIME,<strong> SIT BACK AND RELAX</strong>
+									</p>
+								</li>
+							</ul>
+						<!-- end slider -->
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<section class="spacer green">
+		<div class="container">
+			<div class="row">
+				<div class="span6 alignright flyLeft">
+					<blockquote class="large" style="color:black">
+						<strong>WATER,</strong> This has only two aspects; when mixed with anything its NEED and when not, it is LIFE!.
+					</blockquote>
+				</div>
+				<div class="span6 aligncenter flyRight">
+					<img src="{% static 'users/img/1.jpg' %}">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+		<section id="about" class="the-app clearfix">
+			<div class="digital-intelligence-wrap clearfix">
+				<div class="container">
+					<div class="section-title">
+						<h1>About the Product</h1>
+						<p>
+							<center>Our product promises you to feed information about your available water resources and its usage
+									in everyday chores like washing, watering plants etc. to your phone. Our goal is to help you become a better manager of your water resources and therby helping the environment.Monitoring your overhead tank's 
+									vitals, like turbidity level,and pH , gives you a hassle free management of supply and demand issues with water supply 24X7.
+							</center>
+						</p>
+					</div>
+					<div class="digi-intelligence-block clearfix">
+						<div class="digi-column digi-column1">
+							<i></i>
+							<div class="digi-rightcontent">
+								<h5 class="semi">An IoT based solution</h5>
+								<p>Efficient use of IoT devices ; sensors and actuators</p>
+							</div>
+						</div>
+						<div class="digi-column digi-column2">
+							<div class="digi-rightcontent">
+								<h5 class="semi">Multidunal benefits</h5>
+								<p>Have a complete visualisation of multiple sources.</p>
+							</div>
+							<i></i>
+						</div>
+						<div class="digi-column digi-column3">
+							<i></i>
+							<div class="digi-rightcontent">
+								<h5 class="semi">A one stop solution</h5>
+								<p>Analyse water condition periodically</p>
+							</div>
+						</div>
+						<div class="digi-column digi-column4">
+							<div class="digi-rightcontent">
+								<h5 class="semi">Get SMS Alerts</h5>
+								<p> Get alerts when resources are scarce.
+								</p>
+							</div>
+							<i></i>
+						</div>
+						<br>
+						<div class="digi-column digi-column5" >
+							<i></i>
+							<div class="digi-rightcontent">
+								<h5 class="semi">CLOUD BASED APPLICATION</h5>
+								<p> Visibility on every scheduled process and Real-time reports.</p>
+							</div>
+						</div>
+
+						<div class="digi-column digi-column6">
+							<div class="digi-rightcontent">
+								<h5 class="semi">Web-app </h5>
+								<p>User-friendly interface with detailed analysis for every registered user. </p>
+							</div>
+							<i></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<section id="services" class="section orange" style="background-color: #FFE333 ">
+		<div class="container" style="background-color: #FFE333 ">
+			<h4>Features</h4>
+			<!-- Four columns -->
+			<div class="row">
+				<div class="span3 animated-fast flyIn">
+					<div class="service-box">
+						<img src="{% static 'users/img/icons/laptop.png' %}" alt="" />
+						<h2 style="color:red">Monitor water condition</h2>
+						<p style="color:black"><b>
+						 Through the web app as well as android app, monitor the water consumption and water availability status over a period of days.
+					</b></p>
+					</div>
+				</div>
+				<div class="span3 animated flyIn">
+					<div class="service-box">
+						<img src="{% static 'users/img/icons/lab.png' %}" alt="" />
+						<h2 style="color:brown">Control remotely</h2>
+						<p style="color:black"><b>
+						 Get notified when the reservoir needs water and choose between manual ans auto mode. 
+					</b></p>
+					</div>
+				</div>
+				<div class="span3 animated-fast flyIn">
+					<div class="service-box">
+						<img src="{% static 'users/img/icons/camera.png' %}" alt="" />
+						<b><h2 style="color:black">Analyse and react</h2></b>
+						<p style="color:black"><b>
+						 You can see the water condition over a given period of time and observe the water requiremnent and accordingly plan the addition of new water resources.
+					</b></p>
+					</div>
+				</div>
+				<div class="span3 animated-slow flyIn">
+					<div class="service-box">
+						<img src="{% static 'users/img/icons/basket.png' %}" alt="" />
+						<h2 style="color:black">Manage Resources</h2>
+						<p style="color:black"><b>
+						 Be it overhead tanks or   it allwater pumps manage it  with just a click.
+					</b></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="works" class="section enhance" style="background-color:#D3D3D3"><!-- style="background-image:url({% static 'users/img/bg/01.jpg' %})"-->
+		<h1 style="margin-top:-50px;text-align: center;">MEET OUR TEAM</h1>
+		<div class="enhance"> <!--style="background-image:url({% static 'users/img/bg/01.jpg' %})"-->
+			
+			<div class="row">
+				<!--div class="span4 offset1">
+					<div>
+						<h2>We aim at <strong>developing products to serve the nature</strong></h2>
+						
+					</div>
+				</div-->
+				<h6 style="font-size:18px;">
+					<center>
+					We work as a team to deliver end products by testing them before reaching the masses.Our products promises superlative perfomance once you start using it.<br>At <i>HAIL-HYDRA</i> we strive to deliver the best of our possibility.
+					</center>
+				</h6>
+				<!--div class="span8 offset1">
+					<div class="alignright">
+						<p style="color:#4B0082 ; font-size:22px;"><b>
+						We work as a team to deliver end products by testing them before reaching the masses.Our products promises
+						superlative perfomance once you start using it.At <u><i>Plant-o-meter</i></u> we strive<br> to deliver the best of our possibility.
+					</b></p>
+					</div>
+				</div-->
+			</div>
+			<div class="row">
+				<div class="span2 offset2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'users/img/team/img-1.jpg' %}" alt="" />
+						<h3>SIDDHANT </h3>
+
+					</div>
+				</div>
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'users/img/team/img-2.jpg' %}" alt="" />
+						<h3>LAISHA</h3>
+					</div>
+				</div>
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'users/img/team/img-5.jpg' %}" alt="" />
+						<h3>SANYEM</h3>
+
+					</div>
+				</div>
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'users/img/team/img-3.jpg' %}" alt="" />
+						<h3>TANMAY</h3>
+
+					</div>
+				</div>
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'users/img/team/img-4.jpg' %}" alt="" />
+						<h3>BHAVI</h3>
+
+					</div>
+				</div>
+
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'users/img/team/img-6.jpg' %}" alt="" />
+						<h3>ITI</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<div style="background-image: url({% static 'users/img/bg/x.jpg' %}) "><!-- style="background-image: url({% static 'users/img/bg/q> -->
+	<section class="spacer bg3" >
+		<div class="container" >
+			<div class="row" >
+				<div class="span12 aligncenter flyLeft">
+					<blockquote class="large" style="color:black">
+						Our product promises you to feed information about your available water resources and its usage in everyday chores. 
+					</blockquote>
+				</div>
+				<div class="span12 aligncenter flyRight">
+					<i class="icon-10x">
+			<!--img src="{% static 'users/img/bg/123.png' %}"></i-->
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+	<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x">ayz</i></a>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="{% static 'users/js/jquery.js' %}"></script>
+	<script src="{% static 'users/js/jquery.scrollTo.js' %}"></script>
+	<script src="{% static 'users/js/jquery.nav.js' %}"></script>
+	<script src="{% static 'users/js/jquery.localscroll-1.2.7-min.js' %}"></script>
+	<script src="{% static 'users/js/bootstrap.js' %}"></script>
+	<script src="{% static 'users/js/jquery.prettyPhoto.js' %}"></script>
+	<script src="{% static 'users/js/isotope.js' %}"></script>
+	<script src="{% static 'users/js/jquery.flexslider.js' %}"></script>
+	<script src="{% static 'users/js/inview.js' %}"></script>
+	<script src="{% static 'users/js/animate.js' %}"></script>
+	<script src="{% static 'users/js/custom.js' %}"></script>
+	<script src="{% static 'users/contactform/contactform.js' %}"></script>
+</body>
+<style>
+.x{
+	padding: 6%
+}
+</style>
+</html>
